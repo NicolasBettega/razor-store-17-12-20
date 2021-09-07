@@ -1,0 +1,318 @@
+/* FUENTES TIPOGRAFICAS */
+@font-face {
+	font-family: "Montserrat-Regular";
+	src: url(../res/font/Montserrat-Regular.otf);
+}
+
+@font-face {
+	font-family: "LeagueGothic-Regular";
+	src: url(../res/font/LeagueGothic-Regular.otf);
+}
+
+@font-face {
+	font-family: "Montserrat-Bold";
+	src: url(../res/font/Montserrat-Bold.otf);
+}
+
+body {
+	font-family: "Montserrat-Regular";
+	color: var(--azul);
+}
+
+/*----- paleta de colores usada ------*/
+:root {
+
+	--rojo: #ea5455;
+	--azul: #2A347C;
+
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	cursor: pointer;
+}
+
+.modal img {
+	cursor: auto;
+}
+
+/*--------- header -------------------*/
+header {
+	background-color: var(--azul);
+}
+
+.navbar-light .navbar-toggler-icon {
+	background-image: url(../res/img/ico/menu.svg);
+}
+
+button:focus {
+	outline: inherit;
+}
+
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show > .nav-link {
+	color: #fff;
+}
+
+h1 {
+	background-image: url(../res/img/ico/logo.png);
+	background-size: auto;
+	background-repeat: no-repeat;
+	background-position: center center;
+	display: block;
+	color: white;
+	text-indent: -9999px;
+	width: 120px;
+	height: 40px;
+	margin: 0;
+	font-family: LeagueGothic-Regular;
+}
+
+.carrito {
+
+	background-color: rgb(237, 105, 106);
+	border-radius: 1em;
+
+}
+#totpre{
+	color: #fff;
+}
+
+/*--------- Inicio ------------------*/
+
+#minicarrito {
+	background-color: var(--azul);
+	color: white;
+}
+
+h2 {
+	font-family: LeagueGothic-Regular;
+	font-size: 3.5em;
+	color: var(--azul);
+
+}
+h3{
+		font-family: LeagueGothic-Regular;
+	font-size: 2.5em;
+	color: var(--azul);
+}
+
+/*----------- produtos ---------------*/
+
+.prod {
+	overflow: hidden;
+	padding: 0;
+	border-radius: 1em;
+	/*	border: solid 1px black;	*/
+	box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.2);
+
+}
+
+.btnKart {
+	background-image: url(../res/img/ico/carrito.svg);
+}
+
+.btn-agr {
+	background-image: url(../res/img/ico/sumar_carrito.svg);
+}
+
+.btnKart,
+.btn-agr {
+	background-size: 1.5em;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	text-indent: -99999px;
+	width: 2.5em;
+	height: 2em;
+	background-color: rgb(237, 105, 106);
+	border-radius: 1em;
+	transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.btnKart:hover,
+.btn-agr:hover {
+	background-color: rgb(234, 84, 85);
+}
+
+.prod div {
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+/*----------------- Modal ----------------*/
+.modal {
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, .9);
+	/*	z-index: 1000;*/
+}
+
+.modal-dialog {
+	pointer-events: visible;
+}
+
+.btnCerrar {
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	top: 1em;
+	right: 1em;
+	border-radius: 2.5em;
+	width: 2em;
+	height: 2em;
+	background-color: var(--azul);
+	font-size: 1em;
+	font-weight: 400;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+}
+
+.btnCerrar:hover {
+	background-color: var(--rojo);
+	text-decoration: none;
+	color: white;
+}
+
+.btnAgr {
+	background-color: rgb(42, 52, 124, 0.8);
+}
+
+.btnAgr:hover {
+	background-color: rgb(42, 52, 124, 1);
+}
+.btn-primary{
+	background-color: rgb(42, 52, 124, 0.8);
+	border: rgb(42, 52, 124, 0.8);
+}
+.btn-primary:hover{
+	background-color: rgb(42, 52, 124, 1);
+}
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show > .btn-primary.dropdown-toggle {
+	background-color: rgb(42, 52, 124, 1);
+}
+
+.btn-primary.focus,
+.btn-primary:focus {
+	background-color: rgb(42, 52, 124, 1);
+	box-shadow: 0 0 0 0 rgb(42, 52, 124, .5);
+
+}
+
+/*----- Modal carrito */
+
+.btnMas,
+.btnMenos {
+
+	/*	color: white;*/
+	/*	background-color: black;*/
+	width: 100%;
+	font-weight: bold;
+	/*	font-size: 1em;*/
+}
+
+.eliminar {
+	background-image: url(../res/img/ico/eliminar.svg);
+	background-repeat: no-repeat;
+	background-size: 75%;
+	background-position: center;
+
+	text-indent: -99999px;
+
+	width: 2em;
+	height: 2em;
+
+}
+
+.error {
+	border-color: var(--rojo);
+}
+.bg-modal{
+	background-image: url(../res/img/ico/completado.svg);
+	background-repeat: no-repeat;
+	background-size: 140px;
+	background-position: top center;
+}
+.textos-modal{
+/*	font-size: 1em;*/
+	margin-top: 10em;
+}
+
+/*---------------- medios de pago ---------------*/
+#mtdPago ul li{
+/*
+	padding-top: 4.5em;
+	background-size: 70%;
+*/	
+/*	color: var(--azul);*/
+	margin-top: 1em;
+	padding-top: 4.5em;
+	background-size: 70px;
+	background-repeat: no-repeat;
+	background-position: center top;
+
+}
+.bg-1{
+	background-image: url(../res/img/ico/efectivo.svg);
+}
+.bg-2{
+	background-image: url(../res/img/ico/tranferencia.svg);
+}
+.bg-3{
+	background-image: url(../res/img/ico/deposito.svg);
+}
+.bg-4{
+	background-image: url(../res/img/ico/tarjetas.svg);
+	}
+
+
+
+
+
+/*---------- FOOTER----------------*/
+
+
+footer {
+	background-color: var(--azul);
+	color: #fff;
+}
+
+/*--- tablet *------*/
+
+@media only screen and (min-width:769px) {
+	
+	.intro p{
+		margin: auto;
+		max-width: 60%;
+	}
+	
+	/*------------ modal- ------------*/
+	
+	.modal-dialog {
+		max-width: 650px;
+		margin: 1.75rem auto;
+	}
+
+
+	
+	
+	
+	/*----- Medios de pago -----*/
+	#mtdPago ul li{
+	margin-top: 1em;
+	padding-top: 5em;
+
+}
+}
+
+

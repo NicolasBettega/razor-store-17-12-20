@@ -1,0 +1,203 @@
+/* FUENTES TIPOGRAFICAS */
+@font-face {
+	font-family: "Montserrat-Regular";
+	src: url(../res/font/Montserrat-Regular.otf);
+}
+
+@font-face {
+	font-family: "LeagueGothic-Regular";
+	src: url(../res/font/LeagueGothic-Regular.otf);
+}
+
+@font-face {
+	font-family: "Montserrat-Bold";
+	src: url(../res/font/Montserrat-Bold.otf);
+}
+
+body {
+	font-family: "Montserrat-Regular";
+	color: var(--azul);
+}
+
+/*----- paleta de colores usada ------*/
+:root {
+
+	--rojo: #ea5455;
+	--azul: #2A347C;
+
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.modal img {
+	cursor: auto;
+}
+
+/*--------- header -------------------*/
+header {
+	background-color: var(--azul);
+}
+
+.navbar-light .navbar-toggler-icon {
+	background-image: url(../res/img/ico/menu.svg);
+}
+
+button:focus {
+	outline: inherit;
+}
+
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show > .nav-link {
+	color: #fff;
+}
+
+nav ul li {
+	font-family: "Montserrat-Regular";
+}
+
+h1 {
+
+		font-size: 5em;
+	font-family: LeagueGothic-Regular;
+}
+
+h2 {
+	font-family: LeagueGothic-Regular;
+	font-size: 3em;
+}
+
+/*------------ main ----------------*/
+
+main {
+	background-image: url(../res/img/fondo-mobile.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+#inicio {
+	color: white;
+}
+
+/*-------- que ofrece ----------*/
+
+.ico1,
+.ico2,
+.ico3,
+.ico4 {
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: 100px;
+	padding-top: 8em;
+	margin-top: 1em;
+	font-weight: bold;
+}
+
+.ico1 {
+	background-image: url(../res/img/ico/calidad.svg);
+}
+
+.ico2 {
+	background-image: url(../res/img/ico/seguridad.svg);
+}
+
+.ico3 {
+	background-image: url(../res/img/ico/delivery-truck.svg);
+}
+
+.ico4 {
+	background-image: url(../res/img/ico/descuento.svg);
+}
+
+
+/*----------- descarga -----------------*/
+
+#android,
+#codQr,
+#ios {
+	background-position: center;
+	background-repeat: no-repeat;
+	
+
+	text-indent: -99999px;
+	/*	width: 100%;*/
+	height: 3em;
+	margin-top: 1em;
+
+}
+
+#android {
+	background-image: url(../res/img/ico/btn-android.svg);
+	background-color: var(--azul);
+
+}
+
+#codQr {
+	background-image: url(../res/img/ico/codigo-qr.svg);
+	height: 5em;
+	margin: auto;
+}
+
+#ios {
+	background-image: url(../res/img/ico/btn-ios.svg);
+	background-color: var(--azul);
+}
+
+/*-------- footer */
+
+footer {
+	background-color: var(--azul);
+	color: #fff;
+}
+
+
+
+
+/*---------- tablet --------------*/
+
+@media only screen and (min-width:481px) {
+
+	main {
+		background-image: url(../res/img/fondo-tablet.jpg);
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
+
+}
+
+/*--------------- PC -------------*/
+
+@media only screen and (min-width:768px) {
+	main {
+		background-image: url(../res/img/fondo-pc.jpg);
+		background-repeat: no-repeat;
+		background-size: 100%;
+		}
+
+	.texto-ini {
+		margin-top: 4em;
+	}
+
+}
+
+
+/*--------------- HD --------------*/
+
+@media only screen and (min-width:1280px) {
+	main {
+		background-image: url(../res/img/fondo-hd.jpg);
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
+
+	#descargar {
+		background-color: white;
+	}
+
+
+
+}

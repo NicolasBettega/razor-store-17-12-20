@@ -1,0 +1,9 @@
+Alumno: Nicolás Alejandro Bettega
+DNI:39.469.094
+Carrera: Diseño y Programación Web
+Materia: Interacción con Dispositivos Móviles
+Comisión: B
+Año: 2020
+Docente: Jonatan Gabriel Jorge
+Fecha de final: 18 /12/2020
+
